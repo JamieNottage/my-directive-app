@@ -1,0 +1,24 @@
+<ul>
+  <li>{{ employee.empId }}</li>
+  <li>{{ employee.empName }}</li>
+  <li>{{ employee.salary }}</li>
+  <li>{{ employee.bonus }}</li>
+  <li>{{ employee.joiningDate }}</li>
+</ul>
+<hr />
+<ul>
+  <li>{{ employee.empId }}</li>
+  <li>{{ employee.empName | uppercase }}</li>
+  <li>{{ employee.salary | currency: "GBP" }}</li>
+  <li>{{ employee.bonus | number: "3.2-2" }}</li>
+  <li>{{ employee.joiningDate | date }}</li>
+  <li>{{ employee.description | summary: 34 }}</li>
+</ul>
+<hr />
+
+<!-- Use *ngFor="let x in array-name" -->
+<!-- ngFor is a directive and applied to the elements repeatedly -->
+<ul *ngFor="let p of products">
+  <li>{{ p.prodName }}</li>
+  <li>{{ p.desc | summary: 15 }}</li>
+</ul>

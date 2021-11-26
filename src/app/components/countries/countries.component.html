@@ -1,0 +1,13 @@
+<div class="float-left">
+  <select class="form-select col-xs-6" #countries>
+    <option *ngFor="let country of countriesList" [value]="country">
+      {{ country }}
+    </option>
+  </select>
+
+  <select class="form-select col-xs-6" name="cities" id="cities-list">
+    <!-- <option *ngFor="let city of cities[countries.selected]" [value]="city">
+      {{ city }}
+    </option> -->
+  </select>
+</div>
