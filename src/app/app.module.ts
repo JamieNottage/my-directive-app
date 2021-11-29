@@ -9,6 +9,7 @@ import { TestifComponent } from './components/testif/testif.component';
 import { CourseComponent } from './components/course/course.component';
 import { EmployeeComponent } from './components/employee/employee.component';
 import { SummaryPipe } from './pipes/summary.pipe';
+import { TestngforComponent } from './components/testngfor/testngfor.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SummaryPipe } from './pipes/summary.pipe';
     CourseComponent,
     EmployeeComponent,
     SummaryPipe,
+    TestngforComponent,
   ],
   imports: [BrowserModule],
   providers: [],

@@ -1,1 +1,27 @@
-<p>testif works!</p>
+<!-- <div style="background-color: yellow" *ngIf="isLogged">
+  <p>testif works with true condition!</p>
+</div>
+
+<div style="background-color: lightgreen" *ngIf="!isLogged">
+  <p>testif works with false condition!</p>
+</div> -->
+
+<!-- <div *ngIf="isLogged; else elseBlock" [ngStyle]="{ 'background-color': color }">
+  Hello Admin!
+</div> -->
+
+<div
+  *ngIf="isLogged; else elseBlock"
+  [ngStyle]="{ 'background-color': isLogged ? 'orange' : 'yellow' }"
+>
+  Hello Admin!
+</div>
+
+<ng-template #elseBlock>
+  <div [ngStyle]="{ 'background-color': 'lightgreen' }">Bye Admin!</div>
+</ng-template>
+
+<h1>isLogged - {{ isLogged }}</h1>
+<button class="btn btn-info" (click)="isLogged = !isLogged">
+  Update Based on Condition
+</button>

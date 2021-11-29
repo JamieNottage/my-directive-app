@@ -1,0 +1,39 @@
+<p>testngfor works!</p>
+<h4>ngFor and ngClass Demo</h4>
+
+<!-- Will have separate ul HTML elements with 1 li element-->
+<!-- <ul *ngFor="let p of person; index as i">
+  <li [ngClass]="{ uk: p.country === 'UK', usa: p.country === 'USA' }">
+    {{ i }} - {{ p.name }} - {{ p.age }} - {{ p.country }}
+  </li>
+</ul> -->
+
+<!-- Will have 1 ul element with multiple li elements -->
+<!-- <ul>
+  <li
+    *ngFor="let p of person; index as i"
+    [ngClass]="{ uk: p.country === 'UK', usa: p.country === 'USA' }"
+  >
+    {{ i }} - {{ p.name }} - {{ p.age }} - {{ p.country }}
+  </li>
+</ul> -->
+
+<!-- Classes for first and last-->
+<!-- <ul>
+  <li
+    *ngFor="let p of person; index as i; first as first; last as last"
+    [ngClass]="{ isFirst: first, isLast: last }"
+  >
+    {{ i }} - {{ p.name }} - {{ p.age }} - {{ p.country }}
+  </li>
+</ul> -->
+
+<!-- Classes for even and odd -->
+<ul>
+  <li
+    *ngFor="let p of person; index as i; even as e; odd as o"
+    [ngClass]="{ isEven: e, isOdd: o }"
+  >
+    {{ i }} - {{ p.name }} - {{ p.age }} - {{ p.country }}
+  </li>
+</ul>

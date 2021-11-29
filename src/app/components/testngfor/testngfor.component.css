@@ -1,0 +1,24 @@
+.uk {
+  background-color: aqua;
+  color: burlywood;
+  font-size: larger;
+}
+.usa {
+  background-color: yellow;
+  color: red;
+  font-size: larger;
+}
+.isFirst {
+  background-color: royalblue;
+  font-size: larger;
+}
+.isLast {
+  background-color: skyblue;
+  font-size: larger;
+}
+.isEven {
+  background-color: yellow;
+}
+.isOdd {
+  background-color: yellowgreen;
+}
